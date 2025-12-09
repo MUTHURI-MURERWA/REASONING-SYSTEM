@@ -1,0 +1,90 @@
+This system should use production rules (IF–THEN rules) to control devices like:
+
+Lights
+
+Thermostat
+
+Security system
+
+Doors
+
+Curtains
+
+Sprinklers
+
+Heating/Cooling
+
+PRODUCTION RULES
+Lighting Rules
+RULE L1:
+IF motion detected in the bedroom AND it's nighttime
+THEN turn on the bedroom lights.
+
+RULE L2:
+IF no motion detected for 10 minutes
+THEN turn off the lights.
+
+RULE L3:
+IF sunlight intensity is high
+THEN close smart curtains halfway.
+
+ Temperature / AC Rules
+RULE T1:
+IF temperature > 28°C
+THEN turn on the air conditioner.
+
+RULE T2:
+IF temperature < 20°C
+THEN turn on the heater.
+
+RULE T3:
+IF no one is home
+THEN set thermostat to energy-saving mode.
+
+  Security Rules
+RULE S1:
+IF all occupants leave the house
+THEN activate security alarm.
+
+RULE S2:
+IF window is opened after 11 pm AND no motion detected inside
+THEN send security alert to phone.
+
+RULE S3:
+IF unknown face detected at the door
+THEN lock all smart doors.
+
+ Garden / Outdoor Rules
+RULE G1:
+IF soil moisture is low AND rainfall probability < 20%
+THEN turn on sprinklers.
+
+RULE G2:
+IF wind speed > 50 km/h
+THEN close all outdoor awnings.
+
+A smart home has:
+
+Inputs (Facts)
+
+Time (day/night)
+
+Temperature
+
+Motion detection
+
+Light level
+
+Weather data
+
+Security status
+
+Door/window sensors
+
+Knowledge Base (Rules)
+
+All the IF–THEN rules you write.
+
+Inference Engine
+
+The system checks which rules are true and activates the actions.
